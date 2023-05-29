@@ -1,0 +1,445 @@
+ <!DOCTYPE html>
+<html lang="en"
+<head>
+	<title>Voitures à vendre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+</head>
+<body>
+	<header>
+		<h1>CarCrest</h1>
+		<nav>
+            <ul>
+				<li><a href="vendre_votre_voiture.html">Vendre votre voiture</a></li>
+				<li><a href="Contactez-nous.html">Contactez-nous</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero">
+			<h2>Bienvenu sur notre site de vente de véhicule!</h2>
+			<p> l'endroit idéal pour trouver votre prochaine voiture de rêve. Nous sommes fiers de vous présenter une sélection exceptionnelle de véhicules de haute qualité, tous soigneusement sélectionnés pour répondre à vos besoins.
+
+Notre site de vente de véhicules offre une expérience d'achat en ligne transparente et facile, avec des outils conviviaux pour vous aider à trouver la voiture parfaite pour vous. Nous avons des filtres de recherche avancés qui vous permettent d'essayer les résultats selon votre budget, vos préférences de marque, le kilométrage et bien plus encore. 
+
+Rejoignez notre communauté de clients satisfaits dès maintenant et expérimentez parfaitement votre recherche de la voiture sur notre site </p>
+		</section>
+
+		<section id="new-cars">
+			<h2>A la une chez nos vendeurs professionnels</h2>
+			<strong>Vendeur : Mohamed Riani </strong><img src="Image/mohamed.jpg" class="ronde" />
+			<br>
+			<p>
+			<li>Adresse Mail: Mohamed.riani@gmail.com</li>
+			<li>Lieu de vente: 6 place Edgar Quinet, 69006 Lyon</li>
+			<div class="car">
+			    <img id="bannerImage" src="Image/308gti.jpg"  alt="Voiture1"/><br/>
+			    <button onclick="changeImage('Image/308gti.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage('Image/308gti2.jpg')"class="btn">Image2</button>
+
+			    <script>
+			    	function changeImage(fileName) {
+			    		let img = document.querySelector("#bannerImage");
+			    		img.setAttribute("src", fileName);              
+			    	}
+			    
+			    </script>
+                 
+				<h3>Peugeot  308 GTI</h3>
+				<p>Prix : 39,950€</p>
+				<a href="https://www.largus.fr/fiche-technique/Peugeot/308/Ii/2019/Berline+5+Portes/16+Ptech+263+Ss+Gti-2000781.html" class="btn">Voir plus</a>
+			</div>
+			<br><strong><br>Vendeur : Illia Pantin </strong><img src="Image/illia.jpg" class="ronde" />
+			<br>
+			<p>Adresse Mail: Illiapantin@yahoo.com
+				<li>Lieu de vente: 40 cours Gambetta,69006 Lyon</li>
+			<hr>
+			<div class="car">
+				<img id="bannerImage2" src="Image/rs6.jpg"  alt="Voiture2"/><br/>
+			    <button onclick="changeImage2('Image/rs6.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage2('Image/rs62.jpg')"class="btn">Image2</button>
+                
+                <script>
+                	function changeImage2(fileName) {
+			    		let img = document.querySelector("#bannerImage2");
+			    		img.setAttribute("src", fileName);              
+			    	}
+
+                </script>
+
+				<h3>Audi RS6 ABT</h3>
+				<p>Prix : 190 000€</p>
+				<a href="https://www.largus.fr/fiche-technique/Audi/Rs6+Avant/V+C8/2019/Break+5+Portes/40+V8+Tfsi+600+Qto+Tip-2169055.html" class="btn">Voir plus</a>
+
+			</div>
+			<strong><br>Vendeur : Bassem  </strong><img src="Image/Bassem.jpg" class="ronde" />
+			<br>
+			<p>
+		    Adresse Mail: Bassemoooo@gmail.com
+		    <li>Lieu de vente: 2 Rue Jacquard, 69120 Vaulx-en-Velin</li>
+			<hr>
+			<div class="car">
+				<img id="bannerImage3" src="Image/rs3.jpg"  alt="Voiture3"/><br />
+			    <button onclick="changeImage3('Image/rs3.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage3('Image/rs32.jpg')"class="btn">Image2</button>
+
+				<h3>Audi RS3</h3>
+				<p>Prix : 59 990€</p>
+				<a href="https://www.lacentrale.fr/fiche-technique-voiture-audi-rs3-ii+%282%29+sportback+2.5+tfsi+400+quattro+s+tronic-2020.html" class="btn">Voir plus</a>
+                <script>
+                	function changeImage3(fileName) {
+			    		let img = document.querySelector("#bannerImage3");
+			    		img.setAttribute("src", fileName);              
+			    	}
+			    </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : user-4430  </strong><img src="Image/bot.jpg" class="ronde" />
+			<br>
+			<p>
+		    Adresse Mail: Ketama@gmail.com
+		    <li>Lieu de vente: 63 cours de la République, 69500 Bron</li>
+			<hr>
+			<div class="car">
+				<img id="bannerImage7" src="Image/m42.jpg"  alt="Voiture7"/><br />
+			    <button onclick="changeImage7('Image/m42.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage7('Image/m4.jpg')"class="btn">Image2</button>
+
+				<h3>BMW M4 GTS</h3>
+				<p>Prix : 130 990€</p>
+				<a href="https://www.largus.fr/fiche-technique/Bmw/M4+Coupe/I+F82/2019/Coupe+2+Portes/30+450+Pack+Competition+E6d-T-1981184.html" class="btn">Voir plus</a>
+                <script>
+                	function changeImage7(fileName) {
+			    		let img = document.querySelector("#bannerImage7");
+			    		img.setAttribute("src", fileName);              
+			    	}
+			    </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Andrew Tate  </strong><img src="Image/topg.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: topg@yahoo.com
+				<li>Lieu de vente : Tour Eiffel, 75000 Paris</li>
+			<div class="car">
+				<img id="bannerImage8" src="Image/370z.jpg"  alt="Voiture8"/><br />
+			    <button onclick="changeImage8('Image/370z.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage8('Image/370z2.jpg')"class="btn">Image2</button>
+
+				<h3>Nissan 370Z Nismo</h3>
+              <p>Prix : 45000€</p>
+              <a href="https://www.largus.fr/fiche-technique/Nissan/370z/I+Z34/2017/Coupe+3+Portes/37+V6+344+Nismo+My18-1742233.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage8(fileName) {
+			    		let img = document.querySelector("#bannerImage8");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Steve  </strong><img src="Image/steve.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Steve.Mine@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage9" src="Image/bentayga.jpg"  alt="Voiture9"/><br />
+			    <button onclick="changeImage9('Image/bentayga.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage9('Image/bentayga24.jpg')"class="btn">Image2</button>
+
+				<h3>Bentley Bentayga</h3>
+              <p>Prix : 250000€</p>
+              <a href="https://www.lacentrale.fr/fiche-technique-voiture-bentley-bentayga-(2)+s+v8+4.0+550+bva-2023.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage9(fileName) {
+			    		let img = document.querySelector("#bannerImage9");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Yahya  </strong><img src="Image/bitcoin.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Yahya@yahoo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage10" src="Image/gtr.jpg"  alt="Voiture10"/><br />
+			    <button onclick="changeImage10('Image/gtr.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage10('Image/gtr2.jpg')"class="btn">Image2</button>
+
+				<h3>Nissan GT-R 35</h3>
+              <p>Prix : 200000€</p>
+              <a href="https://www.largus.fr/fiche-technique/Nissan/Gt-R/I+R35/2021/Coupe+2+Portes/38+V6+600+Nismo+2020+E6d-T-2186340.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage10(fileName) {
+			    		let img = document.querySelector("#bannerImage10");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Vendeur Pro 69  </strong><img src="Image/srtv.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Berbatov@gmail.com.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage11" src="Image/sert.jpg"  alt="Voiture11"/><br />
+			    <button onclick="changeImage11('Image/sert.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage11('Image/srt.jpg')"class="btn">Image2</button>
+
+				<h3>Dodge Charger SRT8</h3>
+              <p>Prix :  40000€</p>
+              <a href="https://zeperfs.com/fiche4405-dodge-charger-srt-8.htm" class="btn">Voir plus</a>
+              <script>
+              	function changeImage11(fileName) {
+			    		let img = document.querySelector("#bannerImage11");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : CarNbike  </strong><img src="Image/de.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: CarNbike@yahoo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage12" src="Image/c63.jpg"  alt="Voiture12"/><br />
+			    <button onclick="changeImage12('Image/c63.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage12('Image/c632.jpg')"class="btn">Image2</button>
+
+				<h3>Mercedes C63 AMG</h3>
+              <p>Prix : 80000€</p>
+              <a href="https://zeperfs.com/fiche1599-mercedes-c-63-amg.htm" class="btn">Voir plus</a>
+              <script>
+              	function changeImage12(fileName) {
+			    		let img = document.querySelector("#bannerImage12");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Musk  </strong><img src="Image/musk.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Fakeelon@gmail.com
+				<li>Lieu de vente : 322 Cours Emile Zola , villefranche 69700</li>
+			<div class="car">
+				<img id="bannerImage13" src="Image/tesla.jpg"  alt="Voiture13"/><br />
+			    <button onclick="changeImage13('Image/tesla.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage13('Image/tesla2.jpg')"class="btn">Image2</button>
+
+				<h3>Tesla model 3 </h3>
+              <p>Prix : 60000€</p>
+              <a href="https://www.largus.fr/fiche-technique/Tesla/Model+3/I/2021/Berline+5+Portes/Standard+Rwd+Plus+My21-2331657.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage13(fileName) {
+			    		let img = document.querySelector("#bannerImage13");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			</section>
+
+		<section id="used-cars">
+			<h2>Prix en baisse ↓</h2>
+			<strong><br>Vendeur : Pascal Busac </strong><img src="Image/pascal.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail : Pascal.Busac@Ac-Lyon.fr
+			<li>Lieu de vente : 7 Place de Fourvière, 69005 Lyon</li>
+			<hr>
+			<div class="car">
+				<img id="bannerImage4" src="Image/clio.jpg"  alt="Voiture4"/><br />
+			    <button onclick="changeImage4('Image/clio.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage4('Image/clio2.jpg')"class="btn">Image2</button>
+
+				<h3>Renault Clio phase 3 </h3>
+				<p>Prix : <del>8500€</del>  → 6000€</p>
+				<a href="https://www.fiches-auto.fr/fiche-technique-renault/specs-106-technique-renault-clio-3.php" class="btn">Voir plus</a>
+                <script>
+                	function changeImage4(fileName) {
+			    		let img = document.querySelector("#bannerImage4");
+			    		img.setAttribute("src", fileName);              
+			    	}
+                </script>
+
+			</div>
+			<hr>
+			<strong><br>Vendeur : Lionel Pessi </strong><img src="Image/pessi.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail:Lionel.Peeeesssi@gmail.com
+				<li>Lieu de vente : Avenida Marginal 12 Julho, São Tomé, Sao Tomé-et-Principe</li>
+			<div class="car">
+				<img id="bannerImage5" src="Image/807.jpg"  alt="Voiture5"/><br />
+			    <button onclick="changeImage5('Image/807.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage5('Image/8072.jpg')"class="btn">Image2</button>
+
+				<h3>Peujeot 807</h3>
+				<p>Prix : <del>3500€</del>  → 2500€</p>
+				<a href="https://www.lacentrale.fr/fiche-technique-voiture-peugeot-807-(2)+2.0+hdi+135+style-2015.html" class="btn">Voir plus</a>
+
+				<script>
+					function changeImage5(fileName) {
+			    		let img = document.querySelector("#bannerImage5");
+			    		img.setAttribute("src", fileName);              
+			    	}
+
+
+				</script>
+			</div>
+			<hr>
+			<strong><br>Vendeur : Steve  </strong><img src="Image/steve.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Steve.Mine@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage6" src="Image/c1.jpg"  alt="Voiture6"/><br />
+			    <button onclick="changeImage6('Image/c1.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage6('Image/c12.jpg')"class="btn">Image2</button>
+
+				<h3>Citroen C1</h3>
+              <p>Prix : <del>2500€</del>  → 2000€</p>
+              <a href="https://www.lacentrale.fr/fiche-technique-voiture-citroen-c1-(2)+1.0+68+attraction+3p-2008.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage6(fileName) {
+			    		let img = document.querySelector("#bannerImage6");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Pao Tao  </strong><img src="Image/paotao.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: paotao@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage15" src="Image/cube.jpg"  alt="Voiture15"/><br />
+			    <button onclick="changeImage15('Image/cube.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage15('Image/cube2.jpg')"class="btn">Image2</button>
+
+				<h3>Nissan Cube</h3>
+              <p>Prix : <del>7000€</del>  → 4950€</p>
+              <a href="https://www.lacentrale.fr/fiches-techniques-voiture-nissan-cube--2012-.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage15(fileName) {
+			    		let img = document.querySelector("#bannerImage15");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Gabriel Martinelli  </strong><img src="Image/martinelli.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Steve.Mine@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage16" src="Image/rcz.jpg"  alt="Voiture16"/><br />
+			    <button onclick="changeImage16('Image/rcz.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage16('Image/rcz2.jpg')"class="btn">Image2</button>
+
+				<h3>Peujeot RCZ</h3>
+              <p>Prix : <del>12500€</del>  → 8000€</p>
+              <a href="https://www.lacentrale.fr/fiche-technique-voiture-peugeot-rcz-2.0+hdi+160+fap+bvm6-2015.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage16(fileName) {
+			    		let img = document.querySelector("#bannerImage16");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Karim   </strong><img src="Image/kb9.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Karimkb9@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage17" src="Image/fiat.jpg"  alt="Voiture17"/><br />
+			    <button onclick="changeImage17('Image/fiat.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage17('Image/fiat2.jpg')"class="btn">Image2</button>
+
+				<h3>Fiat Panda </h3>
+              <p>Prix : <del>3000€</del>  → 2000€</p>
+              <a href="https://www.lacentrale.fr/fiches-techniques-voiture-fiat-panda--2019-.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage17(fileName) {
+			    		let img = document.querySelector("#bannerImage17");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Pedro  </strong><img src="Image/pedro.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: Pedrito@momo.com
+				<li>Lieu de vente : 15 Rue Colbert, 13001 Marseille</li>
+			<div class="car">
+				<img id="bannerImage18" src="Image/c4.jpg"  alt="Voiture18"/><br />
+			    <button onclick="changeImage18('Image/c4.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage18('Image/c42.jpg')"class="btn">Image2</button>
+
+				<h3>Citroen C4</h3>
+              <p>Prix : <del>5000€</del>  → 4300€</p>
+              <a href="https://www.lacentrale.fr/fiches-techniques-voiture-citroen-c4--2006-.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage18(fileName) {
+			    		let img = document.querySelector("#bannerImage18");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+              <hr>
+			<strong><br>Vendeur : Greg  </strong><img src="Image/greg.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: ouaicestgreg@gmail.com
+				<li>Lieu de vente : 75 Cours Emile Zola, 69100 Villeurbanne </li>
+			<div class="car">
+				<img id="bannerImage19" src="Image/kangoo.jpg"  alt="Voiture19"/><br />
+			    <button onclick="changeImage19('Image/kangoo.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage19('Image/kangoo2.jpg')"class="btn">Image2</button>
+
+				<h3>Renault Kangoo</h3>
+              <p>Prix : <del>5500€</del>  → 3600€</p>
+              <a href="https://www.lacentrale.fr/fiches-techniques-voiture-renault-kangoo--2002-.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage19(fileName) {
+			    		let img = document.querySelector("#bannerImage19");
+			    		img.setAttribute("src", fileName);              
+			    	}
+              </script>
+               </div>
+               <hr>
+			<strong><br>Vendeur : Patrick  </strong><img src="Image/patrick.jpg" class="ronde" />
+			<br>
+			<p><br>Adresse Mail: PatLyon@gmail.com
+				<li>Lieu de vente :  Rue du 4 aout 1789, 69100 Villeurbanne</li>
+			<div class="car">
+				<img id="bannerImage20" src="Image/multiplat.jpg"  alt="Voiture20"/><br />
+			    <button onclick="changeImage20('Image/multiplat.jpg')"class="btn">Image1</button>
+			    <button onclick="changeImage20('Image/multiplat2.jpg')"class="btn">Image2</button>
+
+				<h3>Fiat Multiplat</h3>
+              <p>Prix : <del>3200€</del>  → 1700€ </p>
+              <a href="https://www.lacentrale.fr/fiches-techniques-voiture-fiat-multipla--2000-.html" class="btn">Voir plus</a>
+              <script>
+              	function changeImage20(fileName) {
+			    		let img = document.querySelector("#bannerImage20");
+			    		img.setAttribute("src", fileName);           
+			    	}
+			  </script>
+            </div>
+            <hr>
+            </main>
+
+
+
+
+
+
+<footer style=" background-color: #333;color: #fff;padding: 10px;text-align: center;">
+
+  <div class="text_to_html"><p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a><br />Les ressources de ce site sont mises à disposition selon les termes de la <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 France</a>.</p>
+  	<p><a href="readme.html">En savoir plus sur nous</p>
+
+</footer>

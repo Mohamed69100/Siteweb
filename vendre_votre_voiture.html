@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CarCrest</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Vendre votre voiture</h1>
+		<nav>
+			<ul><li><a href="Accueil.html">Accueil</a></li>
+				<li><a href="Contactez-nous.html">Contactez-nous</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+<head>
+	<title>Voitures à vendre</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="tests.css">
+</head>
+<section id="sell-car">
+		<h2>Vendre votre voiture</h2>
+		<p>Remplissez le formulaire ci-dessous pour vendre votre voiture </p>
+		<hr>
+		<form action="#" method="post">
+			<label for="name">Nom :</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email :</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="car">Marque et modèle de la voiture :</label>
+			<input type="text" id="car" name="car" required>
+
+			<label for="year">Année de la voiture :</label>
+			<input type="text" id="year" name="year" required>
+
+			<label for="kilometrage">Kilométrage : </label>
+			<input type="number"  id="kilometrage" name="kilometrage"  required>
+
+			<label for="price">Prix souhaité :</label>
+			<input type="number" id="price" name="price" required>
+
+			<div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<h3>Téléverser une de vos images</h3>
+			<p>La taille de l'image ne doit pas dépassez <span>2MB</span></p>
+		</div>
+		<button  class="select-image">Choisir une image</button>
+	</div>
+			<script>
+				const selectImage = document.querySelector('.select-image');
+                const inputFile = document.querySelector('#file');
+                const imgArea = document.querySelector('.img-area');
+
+                selectImage.addEventListener('click', function () { 
+	                inputFile.click();
+                })
+
+                inputFile.addEventListener('change', function () {
+	                const image = this.files[0]
+	                if(image.size < 2000000) {
+		                const reader = new FileReader();
+		                reader.onload = ()=> {
+			                const allImg = imgArea.querySelectorAll('img');
+			                allImg.forEach(item=> item.remove());
+			                const imgUrl = reader.result;
+			                const img = document.createElement('img');
+			                img.src = imgUrl;
+			                imgArea.appendChild(img);
+			                imgArea.classList.add('active');
+			                imgArea.dataset.img = image.name;
+		                }
+		                reader.readAsDataURL(image);
+	                } else {
+		                alert("L'Image pèse plus de 2MB");
+	                }
+                })
+			</script>
+            
+            <label for="button">Appuyer sur le bouton pour confirmer </label> 
+			<a href="confirmation.html" value="Envoyer" type="submit" value="envoyer" class="btn"></a>
+		</form>
+	</section>
+	<hr>
+</main>
+
+<footer style=" background-color: #333;color: #fff;padding: 10px;text-align: center;">
+
+  <div class="text_to_html"><p><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/"><img alt="Licence Creative Commons" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png" /></a><br />Les ressources de ce site sont mises à disposition selon les termes de la <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 3.0 France</a>.</p>
+  	<p><a href="readme.html">En savoir plus sur nous</p>
+
+</footer>
